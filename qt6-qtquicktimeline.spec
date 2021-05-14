@@ -6,7 +6,7 @@
 
 Name:		qt6-qtquicktimeline
 Version:	6.1.0
-Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
+Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}2
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
 Source:		qtquicktimeline-%{?snapshot:%{snapshot}}%{!?snapshot:%{version}}.tar.zst
@@ -63,7 +63,8 @@ export LD_LIBRARY_PATH="$(pwd)/build/lib:${LD_LIBRARY_PATH}"
 
 %install
 %ninja_install -C build
+mv %{buildroot}%{_qtdir}/lib/cmake %{buildroot}%{_libdir}
 
 %files
-%{_qtdir}/lib/cmake/Qt6Qml/QmlPlugins/*
+%{_libdir}/cmake/Qt6Qml/QmlPlugins/*
 %{_qtdir}/qml/QtQuick/Timeline
