@@ -114,5 +114,3 @@ done
 %{_qtdir}/qml/QtQuick/Timeline
 %{_qtdir}/lib/cmake/Qt6BuildInternals/StandaloneTests/QtQuickTimelineTestsConfig.cmake
 %{_qtdir}/lib/cmake/Qt6Qml/QmlPlugins/*.cmake
-%{_qtdir}/lib/cmake/Qt6QuickTimeline
-
