@@ -76,6 +76,7 @@ Development files for the Qt %{major} ${lib} library
 %optional %{_qtdir}/modules/${lib}Private.json
 %optional %{_libdir}/cmake/Qt%{major}${lib}
 %optional %{_libdir}/cmake/Qt%{major}${lib}Private
+%optional %{_qtdir}/lib/cmake/Qt%{major}${lib}
 %optional %{_qtdir}/lib/metatypes/qt%{major}$(echo ${lib}|tr A-Z a-z)_relwithdebinfo_metatypes.json
 %optional %{_qtdir}/lib/metatypes/qt%{major}$(echo ${lib}|tr A-Z a-z)private_relwithdebinfo_metatypes.json
 %optional %{_qtdir}/mkspecs/modules/qt_lib_$(echo ${lib}|tr A-Z a-z).pri
