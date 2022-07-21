@@ -40,6 +40,7 @@ BuildRequires:	cmake(Qt%{major}QuickLayouts)
 BuildRequires:	cmake(Qt%{major}QuickTemplates2)
 BuildRequires:	cmake(Qt%{major}QuickTest)
 BuildRequires:	cmake(Qt%{major}QuickWidgets)
+BuildRequires:	cmake(Qt%{major}Quick)
 BuildRequires:	qt%{major}-cmake
 BuildRequires:	qt%{major}-qtdeclarative
 BuildRequires:	pkgconfig(gl)
