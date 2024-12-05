@@ -3,7 +3,7 @@
 %define major 6
 
 Name:		qt6-qtquicktimeline
-Version:	6.8.0
+Version:	6.8.1
 Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
@@ -55,6 +55,9 @@ License:	LGPLv3/GPLv3/GPLv2
 
 %description
 Qt %{major} Quick timeline plugin
+
+%global extra_devel_files_QuickTimeline \
+%{_qtdir}/sbom/*
 
 %qt6libs QuickTimeline QuickTimelineBlendTrees
 
