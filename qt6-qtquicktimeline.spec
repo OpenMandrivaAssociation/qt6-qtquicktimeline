@@ -3,7 +3,7 @@
 %define major 6
 
 Name:		qt6-qtquicktimeline
-Version:	6.8.1
+Version:	6.8.2
 Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
