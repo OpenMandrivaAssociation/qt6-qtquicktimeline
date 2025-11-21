@@ -28,6 +28,7 @@ BuildRequires:	%{_lib}Qt%{major}DBus-devel
 BuildRequires:	cmake(Qt%{major}Qml)
 BuildRequires:	cmake(Qt%{major}QmlCore)
 BuildRequires:	cmake(Qt%{major}QmlLocalStorage)
+BuildRequires:	cmake(Qt%{major}QmlMeta)
 BuildRequires:	cmake(Qt%{major}QmlModels)
 BuildRequires:	cmake(Qt%{major}QmlWorkerScript)
 BuildRequires:	cmake(Qt%{major}QmlXmlListModel)
